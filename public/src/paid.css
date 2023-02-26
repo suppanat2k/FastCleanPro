@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+    background-color: #F9EBC7;
+    background-image: url('/public/image/332143363_951152665897289_4973207162301448047_n.jpg');
+    background-size: cover;
+}
+
+.main{
+    width: 60%;
+    padding:0 10%;
+}
+
+.cancel{
+    background-color: #3F5947;
+    width: 100%;
+    padding: 1% 0%;
+    margin-bottom: 5%;
+}
+
+.cancel a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 2% 3%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 30%;
+}
+
+.cardpaid{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.header{
+    position: relative;
+    border:1px solid #F5F5F5;
+    width: 100%;
+    text-align: start;
+    padding: 4% 5%;
+    border-radius: 10px;
+    background:linear-gradient(to left, #F9F9F9, #FFFFFF);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.body{
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    overflow: hidden;
+    height:0;
+}
+
+.body img {
+    width: 50%;
+}
+
+.slideon{
+    height:450px;
+    transition: 0.5s;
+}
+
+.slideon2{
+    height:100px;
+    transition: 0.5s;
+}
+.slideon3{
+    height:100px;
+    transition: 0.5s;
+}
+
+.boxofpaid{
+    padding: 0 10%;
+}
+
+.fakepaid{
+    background-color: #3F5947;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 5%;
+    width: 30%;
+    height: 5%;
+    border-radius: 100px;
+}
+
+.fakepaid a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 5%;
+}
+@media (max-width : 1024px) {
+    .main{
+        width: 100%;
+        padding:0;
+    }
+    .cancel{
+        margin-bottom: 10%;
+    }
+    
+    .cancel a{
+        font-size: 18px;
+        width: 40%;
+    }
+}
+ 
+@media (max-width:575px){
+    .slideon{
+        height:250px;
+        transition: 0.5s;
+    }
+    
+    .slideon2{
+        height:100px;
+        transition: 0.5s;
+    }
+    .slideon3{
+        height:100px;
+        transition: 0.5s;
+    }
+    #body1 p{
+        font-size: 14px;
+    }
+
+    .cancel a {
+        font-size: 16px;
+        width: 50%;
+    }
+    .fakepaid{
+        font-size: 14px;
+        width: 50%;
+    }
+}
